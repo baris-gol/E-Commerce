@@ -1,21 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 import { FaUser, FaShoppingCart, FaSearch, FaHeart } from 'react-icons/fa';
+import data from "../data/data.json";
 
 function Header() {
+  const {menu} = data;
   return (
-    <header className="flex justify-between items-center p-4 shadow-md bg-white">
+    <header className="pr-64 pl-64 container mx-auto flex justify-between items-center p-4 shadow-md bg-white">
       <h1 className="pl-50 text-lg font-bold">Bandage</h1>
       <nav>
-      <ul className="flex space-x-4">
-  <li><Link to="/" className="text-gray-500 hover:text-black">Home</Link></li>
-  <li><Link to="/" className="text-gray-500 hover:text-black">Shop</Link></li>
-  <li><Link to="/" className="text-gray-500 hover:text-black">About</Link></li>
-  <li><Link to="/" className="text-gray-500 hover:text-black">Blog</Link></li>
-  <li><Link to="/pricing" className="text-gray-500 hover:text-black">Contact</Link></li>
-  <li><Link to="/contact" className="text-gray-500 hover:text-black">Pages</Link></li>
-</ul>
-
+        <ul className="flex space-x-4">
+          {menu.map((item, index) => (
+            <li key={index}>
+              <Link to={`/${item.toLowerCase()}`} className="text-gray-500 hover:text-black">
+                {item}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </nav>
       <div className="flex space-x-4 ml-[90px]">
   <div className="flex items-center space-x-1">

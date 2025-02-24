@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import data from "../data/data.json";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi"; // React ikonları için
 
 const BestSellerProduct = () => {
-  const { categories, products } = data.bestSellers; 
+  const { categories, products,  } = data.bestSellers;
+  const {banner} = data.bestSellersProducts;
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
-    const banner = data.BestSellersProduct.banner; 
 
   const selectedCategory = categories[selectedIndex];
 
@@ -34,8 +34,11 @@ const BestSellerProduct = () => {
   };
 
   return (
-    <section className=" pl-62 pr-62 container mx-auto px-6 py-10 flex flex-col md:flex-row gap-6">
-      {/* SOL ÜRÜN LİSTESİ */}
+    <section className="pr-64 pl-64 container mx-auto px-4 py-10 flex flex-col md:flex-row gap-6">
+      {/* SOL KATEGORİ BANNER'I */}
+      
+
+      {/* SAĞ ÜRÜN LİSTESİ */}
       <div className="w-full md:w-3/4">
         {/* Kategori Başlığı ve Oklar */}
         <div className="flex justify-between items-center border-b border-gray-300 pb-2 relative">
@@ -52,7 +55,7 @@ const BestSellerProduct = () => {
                   key={index}
                   className={`text-sm transition-all duration-300 cursor-pointer ${
                     selectedIndex === index
-                      ? "font-bold text-blue-500"
+                      ? "font-bold text-blue-500" // Sadece yazıyı vurguladım
                       : "hover:text-blue-500"
                   }`}
                   onClick={() => setSelectedIndex(index)}
@@ -95,12 +98,15 @@ const BestSellerProduct = () => {
                   className="max-w-full max-h-full object-contain rounded-lg"
                 />
               </div>
+              
               <h3 className="mt-2 text-sm font-semibold text-gray-900">
                 {product.title}
               </h3>
               <p className="text-xs text-gray-500">{product.department}</p>
               <p className="mt-1 text-sm">
-                <span className="text-gray-400 line-through">${product.price}</span>{" "}
+                <span className="text-gray-400 line-through">
+                  ${product.price}
+                </span>{" "}
                 <span className="text-green-500 font-semibold">
                   ${product.discountPrice}
                 </span>
@@ -109,11 +115,9 @@ const BestSellerProduct = () => {
           ))}
         </div>
       </div>
-
-      {/* SAĞ KATEGORİ BANNER'I */}
       <div className="w-full md:w-1/4 relative">
         <img
-          src={banner.image} // ✔ Doğru JSON'dan banner çekildi
+          src={banner.image}
           alt="Category Banner"
           className="w-full h-full object-cover rounded-lg shadow-md"
         />

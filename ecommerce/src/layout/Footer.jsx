@@ -2,8 +2,8 @@ import data from "../data/data.json";
 function Footer() {
   const { agency, companyInfo, legal, features, resources, contact, socials, copyright } = data.footer;
   return (
-    <footer className="bg-gray-900 text-white py-10">
-      <div className="flex justify-between container mx-auto px-4">
+    <footer className=" bg-gray-900 text-white py-10">
+      <div className="pl-64 pr-64 flex justify-between container mx-auto px-4">
         <div>
         
           <h3 className="text-xl font-semibold">{agency.title}</h3>
@@ -13,7 +13,7 @@ function Footer() {
           {agency.buttonText}
         </button>
       </div>
-      <div className="pt-10 container mx-auto px-4 grid grid-cols-2 md:grid-cols-5 gap-10">
+      <div className="pl-64 pr-64 pt-10 container mx-auto px-4 grid grid-cols-2 md:grid-cols-5 gap-10">
         {[["Company Info", companyInfo], ["Legal", legal], ["Features", features], ["Resources", resources], ["Get In Touch", contact]].map(([title, items], i) => (
           <div key={i}>
             <h4 className="font-semibold mb-2">{title}</h4>
@@ -25,7 +25,7 @@ function Footer() {
           </div>
         ))}
       </div>
-      <div className="container mx-auto px-4 mt-10 border-t border-gray-700 pt-6 flex justify-between items-center">
+      <div className="pl-64 pr-64 container mx-auto px-4 mt-10 border-t border-gray-700 pt-6 flex justify-between items-center">
         <p className="text-sm text-gray-400">{copyright}</p>
         <div className="flex space-x-4">
           {socials.map((social, i) => (
