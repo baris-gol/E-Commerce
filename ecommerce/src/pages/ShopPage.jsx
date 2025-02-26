@@ -1,12 +1,12 @@
 import Header from "../layout/Header";
-
 import data from "../data/data.json";
 import ResultsFilter from "../components/ResultsFilter";
 import ProductGrid from "../components/ProductGrid";
 import FootBandage from "../components/FootBandage";
 import Logo from "../components/Logo";
-import HeaderShopPage from "../layout/HeaderShoppage";
-
+import HeaderShopPage from "../layout/HeaderShopPage";
+import { Link } from "react-router-dom"; 
+import { ChevronRight } from "lucide-react";
 
 
 function ShopPage() {
@@ -16,9 +16,18 @@ function ShopPage() {
         <HeaderShopPage/>
           <Header />
           <section>
-            {/* BİRİNCİ COMPONENT */}
-            <div>
-            <h1 className="pl-64 pr-64 text-lg font-bold">Shop</h1>
+           {/* BİRİNCİ COMPONENT */}
+           <div className="container mx-auto px-4 py-6 pl-64 pr-64">
+              <div className="flex flex-col md:flex-row justify-between items-center">
+                <h1 className="text-[#252B42] text-2xl md:text-3xl font-bold">Shop</h1>
+                <div className="flex items-center mt-2 md:mt-0">
+                  <Link to="/ProductDetailPage" className="text-[#252B42] text-sm font-medium hover:text-[#23856D]">
+                    Home
+                  </Link>
+                  <ChevronRight className="mx-2 h-4 w-4 text-[#BDBDBD]" />
+                  <span className="text-[#BDBDBD] text-sm font-medium">Shop</span>
+                </div>
+              </div>
             </div>
             {/* İKİNCİ COMPONENT */}
               <div className="flex justify-center items-center gap-4 pt-8 pb-8">
