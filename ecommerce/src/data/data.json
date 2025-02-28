@@ -30,7 +30,7 @@
   ],
    "bestSellers": {
   "banner": {
-    "image": "/bestseller.jpg",
+    "image": "/kahve1.png",
     "category": "FURNITURE",
     "itemsCount": "5 Items"
   },
@@ -43,7 +43,7 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner1.png",
+        "image": "/cilek.png",
         "colors": ["#23A6F0", "#23856D", "#E77C40", "#252B42"]
       },
       {
@@ -53,7 +53,7 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner2.png",
+        "image": "/kek.png",
         "colors": ["#23A6F0", "#23856D", "#E77C40", "#252B42"]
       },
       {
@@ -63,7 +63,7 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner3.png",
+        "image": "/cilek3.png",
         "colors": ["#23A6F0", "#23856D", "#E77C40", "#252B42"]
       },
       {
@@ -73,7 +73,7 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner1.png",
+        "image": "/ekler.png",
         "colors": ["#23A6F0", "#23856D", "#E77C40", "#252B42"]
       },
       {
@@ -83,7 +83,7 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner2.png",
+        "image": "/sandvic2.png",
         "colors": ["#23A6F0", "#23856D", "#E77C40", "#252B42"]
       },
       {
@@ -93,7 +93,7 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner3.png",
+        "image": "/sandvic1.png",
         "colors": ["#23A6F0", "#23856D", "#E77C40", "#252B42"]
       },
       {
@@ -103,7 +103,7 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner1.png",
+        "image": "/sandvic3.png",
         "colors": ["#23A6F0", "#23856D", "#E77C40", "#252B42"]
       },
       {
@@ -113,7 +113,7 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner2.png",
+        "image": "/sandvic4.png",
         "colors": ["#23A6F0", "#23856D", "#E77C40", "#252B42"]
       },
       {
@@ -123,7 +123,7 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner3.png",
+        "image": "/kahve1.png",
         "colors": ["#23A6F0", "#23856D", "#E77C40", "#252B42"]
       },
       {
@@ -133,7 +133,7 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner1.png",
+        "image": "/kahve3.png",
         "colors": ["#23A6F0", "#23856D", "#E77C40", "#252B42"]
       },
       {
@@ -143,7 +143,7 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner2.png",
+        "image": "/kahve2.png",
         "colors": ["#23A6F0", "#23856D", "#E77C40", "#252B42"]
       },
       {
@@ -153,7 +153,7 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner3.png",
+        "image": "/kahve4.png",
         "colors": ["#23A6F0", "#23856D", "#E77C40", "#252B42"]
       },
       {
@@ -163,7 +163,7 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner1.png",
+        "image": "/kahve5.png",
         "colors": ["#23A6F0", "#23856D", "#E77C40", "#252B42"]
       },
       {
@@ -173,7 +173,7 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner2.png",
+        "image": "/kahve6.png",
         "colors": ["#23A6F0", "#23856D", "#E77C40", "#252B42"]
       },
       {
@@ -183,7 +183,7 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner3.png",
+        "image": "/kahve8.png",
         "colors": ["#23A6F0", "#23856D", "#E77C40", "#252B42"]
       },
       {
@@ -193,7 +193,7 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner1.png",
+        "image": "/kahve9.png",
         "colors": ["#23A6F0", "#23856D", "#E77C40", "#252B42"]
       },
       {
@@ -203,7 +203,7 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner2.png",
+        "image": "/kahve9.png",
         "colors": ["#23A6F0", "#23856D", "#E77C40", "#252B42"]
       },
       {
@@ -213,7 +213,7 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner3.png",
+        "image": "/kahve10.png",
         "colors": ["#23A6F0", "#23856D", "#E77C40", "#252B42"]
       }
     ]
@@ -399,6 +399,7 @@
     }
   ]
 },
+
   "footer": {
     "agency": {
       "title": "Consulting Agency For Your Business",
